@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PreSchoolEducation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CorrectBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="JnV-in-S3j">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="correct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npx-IB-PHf">
+                                <rect key="frame" x="15" y="231" width="359" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ye1-IX-8EI">
+                                <rect key="frame" x="158" y="388" width="77" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="play_again"/>
+                                <connections>
+                                    <action selector="PlayAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="52E-P4-7Yv"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="urg-j8-mr8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sst-Uc-XSc">
+                                <rect key="frame" x="39" y="120" width="53" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="number0"/>
+                                <connections>
+                                    <action selector="Answer0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XDX-Yc-Fvd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVA-BB-ynI">
+                                <rect key="frame" x="100" y="120" width="53" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="number1"/>
+                                <connections>
+                                    <action selector="Answer1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cPX-9D-xz6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozo-qs-X1K">
+                                <rect key="frame" x="161" y="120" width="53" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="number2"/>
+                                <connections>
+                                    <action selector="Answer2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hby-xr-43q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlo-eF-hQI">
+                                <rect key="frame" x="222" y="120" width="53" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="number3"/>
+                                <connections>
+                                    <action selector="Answer3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MJ0-ZF-Oc0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ct9-Xf-Utd">
+                                <rect key="frame" x="283" y="120" width="53" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="number4"/>
+                                <connections>
+                                    <action selector="Answer4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Auq-qi-5Vx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnZ-du-nWH">
+                                <rect key="frame" x="39" y="193" width="53" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="number5"/>
+                                <connections>
+                                    <action selector="Answer5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lfv-Mt-5EL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJd-di-e4x">
+                                <rect key="frame" x="100" y="193" width="53" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="number6"/>
+                                <connections>
+                                    <action selector="Answer6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cRS-fS-jm6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDV-Bc-dYc">
+                                <rect key="frame" x="161" y="193" width="53" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="number7"/>
+                                <connections>
+                                    <action selector="Answer7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5xq-MQ-CvO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pia-z5-7B1">
+                                <rect key="frame" x="222" y="193" width="53" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="number8"/>
+                                <connections>
+                                    <action selector="Answer8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tTp-I3-o6E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIp-WY-LFu">
+                                <rect key="frame" x="283" y="193" width="53" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="number9"/>
+                                <connections>
+                                    <action selector="Answer9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3SZ-aj-7wp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Basket" translatesAutoresizingMaskIntoConstraints="NO" id="sG3-dO-qa0">
+                                <rect key="frame" x="16" y="510" width="198" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pP4-ET-j29">
+                                <rect key="frame" x="0.0" y="295" width="375" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="316-9b-fah" customClass="DraggedImageView" customModule="PreSchoolEducation" customModuleProvider="target">
+                                <rect key="frame" x="23" y="536" width="64" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="qub-mb-vxo" customClass="DraggedImageView" customModule="PreSchoolEducation" customModuleProvider="target">
+                                <rect key="frame" x="66" y="536" width="64" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="bKg-J9-X1X" customClass="DraggedImageView" customModule="PreSchoolEducation" customModuleProvider="target">
+                                <rect key="frame" x="76" y="546" width="64" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="kPy-az-H12" customClass="DraggedImageView" customModule="PreSchoolEducation" customModuleProvider="target">
+                                <rect key="frame" x="100" y="529" width="64" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="rkU-EY-p4G" customClass="DraggedImageView" customModule="PreSchoolEducation" customModuleProvider="target">
+                                <rect key="frame" x="148" y="536" width="64" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="Nx0-Vd-c3g" customClass="DraggedImageView" customModule="PreSchoolEducation" customModuleProvider="target">
+                                <rect key="frame" x="158" y="546" width="64" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="fvx-QS-1eO" customClass="DraggedImageView" customModule="PreSchoolEducation" customModuleProvider="target">
+                                <rect key="frame" x="125" y="545" width="64" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="ajt-af-1YL" customClass="DraggedImageView" customModule="PreSchoolEducation" customModuleProvider="target">
+                                <rect key="frame" x="33" y="546" width="64" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="Ln7-V5-h3w" customClass="DraggedImageView" customModule="PreSchoolEducation" customModuleProvider="target">
+                                <rect key="frame" x="100" y="546" width="64" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="Answer0" destination="sst-Uc-XSc" id="h6W-hT-8Px"/>
+                        <outlet property="Answer1" destination="IVA-BB-ynI" id="Nee-Fe-pNo"/>
+                        <outlet property="Answer2" destination="Ozo-qs-X1K" id="V6R-lG-PRj"/>
+                        <outlet property="Answer3" destination="Tlo-eF-hQI" id="bCI-sM-Dvn"/>
+                        <outlet property="Answer4" destination="Ct9-Xf-Utd" id="LOc-n2-Rja"/>
+                        <outlet property="Answer5" destination="EnZ-du-nWH" id="g6J-d6-cy3"/>
+                        <outlet property="Answer6" destination="pJd-di-e4x" id="IRH-FU-11J"/>
+                        <outlet property="Answer7" destination="xDV-Bc-dYc" id="8WF-OQ-wNw"/>
+                        <outlet property="Answer8" destination="pia-z5-7B1" id="US3-gA-w4w"/>
+                        <outlet property="Answer9" destination="EIp-WY-LFu" id="5KJ-gL-EtQ"/>
+                        <outlet property="Apple1" destination="316-9b-fah" id="rWZ-Wp-HZd"/>
+                        <outlet property="Apple2" destination="ajt-af-1YL" id="rqO-3U-B0E"/>
+                        <outlet property="Apple3" destination="qub-mb-vxo" id="jD7-yV-Apg"/>
+                        <outlet property="Apple4" destination="bKg-J9-X1X" id="bn6-GZ-nxv"/>
+                        <outlet property="Apple5" destination="kPy-az-H12" id="ZxB-ls-fR2"/>
+                        <outlet property="Apple6" destination="Ln7-V5-h3w" id="Is0-sK-zRd"/>
+                        <outlet property="Apple7" destination="rkU-EY-p4G" id="J56-as-Vz9"/>
+                        <outlet property="Apple8" destination="Nx0-Vd-c3g" id="Zi5-H4-0cJ"/>
+                        <outlet property="Apple9" destination="fvx-QS-1eO" id="0ig-uv-z1n"/>
+                        <outlet property="Background" destination="urg-j8-mr8" id="rgX-bO-m3h"/>
+                        <outlet property="Basket" destination="sG3-dO-qa0" id="IQc-lM-3Fh"/>
+                        <outlet property="Correct" destination="Npx-IB-PHf" id="Iwp-kC-3m8"/>
+                        <outlet property="CorrectBackground" destination="JnV-in-S3j" id="81O-RQ-B0v"/>
+                        <outlet property="PlayAgain" destination="Ye1-IX-8EI" id="6ng-NK-0hG"/>
+                        <outlet property="Question" destination="pP4-ET-j29" id="tBJ-R6-pw1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="138.0809595202399"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Basket" width="558" height="743"/>
+        <image name="CorrectBackground.png" width="750" height="1334"/>
+        <image name="apple" width="256" height="256"/>
+        <image name="background.png" width="750" height="1334"/>
+        <image name="number0" width="256" height="256"/>
+        <image name="number1" width="256" height="256"/>
+        <image name="number2" width="256" height="256"/>
+        <image name="number3" width="256" height="256"/>
+        <image name="number4" width="256" height="256"/>
+        <image name="number5" width="256" height="256"/>
+        <image name="number6" width="256" height="256"/>
+        <image name="number7" width="256" height="256"/>
+        <image name="number8" width="256" height="256"/>
+        <image name="number9" width="256" height="256"/>
+        <image name="play_again" width="216" height="218"/>
+    </resources>
+</document>
