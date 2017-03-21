@@ -32,16 +32,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var Apple7: DraggedImageView!
     @IBOutlet weak var Apple8: DraggedImageView!
     @IBOutlet weak var Apple9: DraggedImageView!
-    
-    
-    
-    
+
     @IBOutlet weak var Question: UILabel!
     @IBOutlet weak var Background: UIImageView!
     @IBOutlet weak var Basket: UIImageView!
     @IBOutlet weak var CorrectBackground: UIImageView!
     @IBOutlet weak var Correct: UILabel!
     @IBOutlet weak var PlayAgain: UIButton!
+    
+    @IBOutlet weak var StarAnimation1: UIImageView!
+    @IBOutlet weak var StarAnimation2: UIImageView!
+    
     
     var FirstNumber : Int = 0
     var SecondNumber : Int = 0
@@ -58,6 +59,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         RandomizeNumbers()
+        
         do {
             try CorrectAudioPlayer = AVAudioPlayer(contentsOf: CorrectAudioURL as URL)
         }catch
@@ -71,7 +73,19 @@ class ViewController: UIViewController {
         {
             print("error")
         }
-
+        
+        let imagesNames = ["star_kids1.png", "star_kids2.png"]
+        var images = [UIImage] ()
+        for i in 0..<imagesNames.count{
+            images.append(UIImage(named: imagesNames[i])!)
+        }
+        StarAnimation1.animationImages = images
+        StarAnimation1.animationDuration = 1.0
+        StarAnimation1.startAnimating()
+        StarAnimation2.animationImages = images
+        StarAnimation2.animationDuration = 1.0
+        StarAnimation2.startAnimating()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -191,6 +205,9 @@ class ViewController: UIViewController {
         Apple7.isHidden = false
         Apple8.isHidden = false
         Apple9.isHidden = false
+        
+        StarAnimation1.isHidden = true
+        StarAnimation2.isHidden = true
         }
     
     func RandomizeNumbers(){
@@ -235,6 +252,9 @@ class ViewController: UIViewController {
         Apple7.isHidden = true
         Apple8.isHidden = true
         Apple9.isHidden = true
+        
+        StarAnimation1.isHidden = false
+        StarAnimation2.isHidden = false
 
     }
     

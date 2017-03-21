@@ -21,8 +21,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CorrectBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="JnV-in-S3j">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CorrectBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="JnV-in-S3j">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ye1-IX-8EI">
+                                <rect key="frame" x="158" y="388" width="77" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="play_again"/>
+                                <connections>
+                                    <action selector="PlayAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="52E-P4-7Yv"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gdu-9k-bAE">
+                                <rect key="frame" x="40" y="157" width="117" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fqY-g5-Qaf">
+                                <rect key="frame" x="243" y="324" width="117" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="correct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npx-IB-PHf">
@@ -32,17 +47,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ye1-IX-8EI">
-                                <rect key="frame" x="158" y="388" width="77" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="play_again"/>
-                                <connections>
-                                    <action selector="PlayAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="52E-P4-7Yv"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="urg-j8-mr8">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="urg-j8-mr8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sst-Uc-XSc">
                                 <rect key="frame" x="39" y="120" width="53" height="57"/>
@@ -173,6 +179,16 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JnV-in-S3j" secondAttribute="trailing" id="6sO-df-Pmr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="urg-j8-mr8" secondAttribute="bottom" id="ChJ-nd-mfU"/>
+                            <constraint firstItem="JnV-in-S3j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QxP-If-SgE"/>
+                            <constraint firstAttribute="trailing" secondItem="urg-j8-mr8" secondAttribute="trailing" id="WJY-Nk-yDx"/>
+                            <constraint firstItem="JnV-in-S3j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YrZ-6k-TE0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JnV-in-S3j" secondAttribute="bottom" id="i3p-Yl-8iu"/>
+                            <constraint firstItem="urg-j8-mr8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uJ0-jz-ol0"/>
+                            <constraint firstItem="urg-j8-mr8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zvI-SD-hA4"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="Answer0" destination="sst-Uc-XSc" id="h6W-hT-8Px"/>
@@ -200,6 +216,8 @@
                         <outlet property="CorrectBackground" destination="JnV-in-S3j" id="81O-RQ-B0v"/>
                         <outlet property="PlayAgain" destination="Ye1-IX-8EI" id="6ng-NK-0hG"/>
                         <outlet property="Question" destination="pP4-ET-j29" id="tBJ-R6-pw1"/>
+                        <outlet property="StarAnimation1" destination="Gdu-9k-bAE" id="Gl0-Vw-Gp7"/>
+                        <outlet property="StarAnimation2" destination="fqY-g5-Qaf" id="eZW-yV-xx0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
