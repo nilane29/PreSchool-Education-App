@@ -43,6 +43,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var StarAnimation1: UIImageView!
     @IBOutlet weak var StarAnimation2: UIImageView!
     
+    let W = UIScreen.main.bounds.width
+    let H = UIScreen.main.bounds.height
     
     var FirstNumber : Int = 0
     var SecondNumber : Int = 0
@@ -58,6 +60,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        AppLayout()
         RandomizeNumbers()
         
         do {
@@ -260,6 +263,46 @@ class ViewController: UIViewController {
     
     func incorrect() {
         WrongAudioPlayer.play ()
+        
+    }
+    
+    func AppLayout(){
+        
+        self.Background.frame = CGRect(x: 0, y: 0, width: self.W, height: self.H)
+        self.CorrectBackground.frame = CGRect(x: 0, y: 0, width: self.W, height: self.H)
+        
+        self.Answer0.frame = CGRect(x: self.W * 0.10, y: self.H * 0.18, width: self.H * 0.09, height: self.H * 0.09)
+        self.Answer1.frame = CGRect(x: self.W * 0.26, y: self.H * 0.18, width: self.H * 0.09, height: self.H * 0.09)
+        self.Answer2.frame = CGRect(x: self.W * 0.42, y: self.H * 0.18, width: self.H * 0.09, height: self.H * 0.09)
+        self.Answer3.frame = CGRect(x: self.W * 0.58, y: self.H * 0.18, width: self.H * 0.09, height: self.H * 0.09)
+        self.Answer4.frame = CGRect(x: self.W * 0.74, y: self.H * 0.18, width: self.H * 0.09, height: self.H * 0.09)
+        
+        self.Answer5.frame = CGRect(x: self.W * 0.10, y: self.H * 0.28, width: self.H * 0.09, height: self.H * 0.09)
+        self.Answer6.frame = CGRect(x: self.W * 0.26, y: self.H * 0.28, width: self.H * 0.09, height: self.H * 0.09)
+        self.Answer7.frame = CGRect(x: self.W * 0.42, y: self.H * 0.28, width: self.H * 0.09, height: self.H * 0.09)
+        self.Answer8.frame = CGRect(x: self.W * 0.58, y: self.H * 0.28, width: self.H * 0.09, height: self.H * 0.09)
+        self.Answer9.frame = CGRect(x: self.W * 0.74, y: self.H * 0.28, width: self.H * 0.09, height: self.H * 0.09)
+        
+        self.Question.frame = CGRect(x: self.W * 0.15, y: self.H * 0.25, width: self.H * 0.40, height: self.H * 0.60)
+        
+        self.Basket.frame = CGRect(x: self.W * 0.10, y: self.H * 0.78, width: self.H * 0.30, height: self.H * 0.20)
+        
+        self.Apple1.frame = CGRect(x: self.W * 0.11, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
+        self.Apple2.frame = CGRect(x: self.W * 0.15, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
+        self.Apple3.frame = CGRect(x: self.W * 0.19, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
+        self.Apple4.frame = CGRect(x: self.W * 0.23, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
+        self.Apple5.frame = CGRect(x: self.W * 0.27, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
+        self.Apple6.frame = CGRect(x: self.W * 0.31, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
+        self.Apple7.frame = CGRect(x: self.W * 0.35, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
+        self.Apple8.frame = CGRect(x: self.W * 0.40, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
+        self.Apple9.frame = CGRect(x: self.W * 0.47, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
+        
+        self.Correct.frame = CGRect(x: self.W * 0.13, y: self.H * 0.13, width: self.H * 0.40, height: self.H * 0.60)
+        
+        self.PlayAgain.frame = CGRect(x: self.W * 0.41, y: self.H * 0.60, width: self.H * 0.14, height: self.H * 0.14)
+        
+        self.StarAnimation1.frame = CGRect(x: self.W * 0.10, y: self.H * 0.20, width: self.H * 0.18, height: self.H * 0.18)
+        self.StarAnimation2.frame = CGRect(x: self.W * 0.64, y: self.H * 0.47, width: self.H * 0.18, height: self.H * 0.18)
         
     }
 }
