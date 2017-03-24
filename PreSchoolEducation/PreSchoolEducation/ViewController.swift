@@ -211,6 +211,8 @@ class ViewController: UIViewController {
         
         StarAnimation1.isHidden = true
         StarAnimation2.isHidden = true
+        
+        AppLayout()
         }
     
     func RandomizeNumbers(){
@@ -271,38 +273,38 @@ class ViewController: UIViewController {
         self.Background.frame = CGRect(x: 0, y: 0, width: self.W, height: self.H)
         self.CorrectBackground.frame = CGRect(x: 0, y: 0, width: self.W, height: self.H)
         
-        self.Answer0.frame = CGRect(x: self.W * 0.10, y: self.H * 0.18, width: self.H * 0.09, height: self.H * 0.09)
-        self.Answer1.frame = CGRect(x: self.W * 0.26, y: self.H * 0.18, width: self.H * 0.09, height: self.H * 0.09)
-        self.Answer2.frame = CGRect(x: self.W * 0.42, y: self.H * 0.18, width: self.H * 0.09, height: self.H * 0.09)
-        self.Answer3.frame = CGRect(x: self.W * 0.58, y: self.H * 0.18, width: self.H * 0.09, height: self.H * 0.09)
-        self.Answer4.frame = CGRect(x: self.W * 0.74, y: self.H * 0.18, width: self.H * 0.09, height: self.H * 0.09)
+        self.Answer0.frame = CGRect(x: self.W * 0.10, y: self.H * 0.18, width: self.W * 0.15, height: self.H * 0.10)
+        self.Answer1.frame = CGRect(x: self.W * 0.27, y: self.H * 0.18, width: self.W * 0.15, height: self.H * 0.10)
+        self.Answer2.frame = CGRect(x: self.W * 0.43, y: self.H * 0.18, width: self.W * 0.15, height: self.H * 0.10)
+        self.Answer3.frame = CGRect(x: self.W * 0.59, y: self.H * 0.18, width: self.W * 0.15, height: self.H * 0.10)
+        self.Answer4.frame = CGRect(x: self.W * 0.75, y: self.H * 0.18, width: self.W * 0.15, height: self.H * 0.10)
         
-        self.Answer5.frame = CGRect(x: self.W * 0.10, y: self.H * 0.28, width: self.H * 0.09, height: self.H * 0.09)
-        self.Answer6.frame = CGRect(x: self.W * 0.26, y: self.H * 0.28, width: self.H * 0.09, height: self.H * 0.09)
-        self.Answer7.frame = CGRect(x: self.W * 0.42, y: self.H * 0.28, width: self.H * 0.09, height: self.H * 0.09)
-        self.Answer8.frame = CGRect(x: self.W * 0.58, y: self.H * 0.28, width: self.H * 0.09, height: self.H * 0.09)
-        self.Answer9.frame = CGRect(x: self.W * 0.74, y: self.H * 0.28, width: self.H * 0.09, height: self.H * 0.09)
+        self.Answer5.frame = CGRect(x: self.W * 0.10, y: self.H * 0.30, width: self.W * 0.15, height: self.H * 0.10)
+        self.Answer6.frame = CGRect(x: self.W * 0.27, y: self.H * 0.30, width: self.W * 0.15, height: self.H * 0.10)
+        self.Answer7.frame = CGRect(x: self.W * 0.43, y: self.H * 0.30, width: self.W * 0.15, height: self.H * 0.10)
+        self.Answer8.frame = CGRect(x: self.W * 0.59, y: self.H * 0.30, width: self.W * 0.15, height: self.H * 0.10)
+        self.Answer9.frame = CGRect(x: self.W * 0.75, y: self.H * 0.30, width: self.W * 0.15, height: self.H * 0.10)
         
-        self.Question.frame = CGRect(x: self.W * 0.15, y: self.H * 0.25, width: self.H * 0.40, height: self.H * 0.60)
+        self.Question.frame = CGRect(x: self.W * 0.15, y: self.H * 0.25, width: self.W * 0.80, height: self.H * 0.60)
         
-        self.Basket.frame = CGRect(x: self.W * 0.10, y: self.H * 0.78, width: self.H * 0.30, height: self.H * 0.20)
+        self.Basket.frame = CGRect(x: self.W * 0.10, y: self.H * 0.78, width: self.W * 0.55, height: self.H * 0.20)
         
-        self.Apple1.frame = CGRect(x: self.W * 0.11, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
-        self.Apple2.frame = CGRect(x: self.W * 0.15, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
-        self.Apple3.frame = CGRect(x: self.W * 0.19, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
-        self.Apple4.frame = CGRect(x: self.W * 0.23, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
-        self.Apple5.frame = CGRect(x: self.W * 0.27, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
-        self.Apple6.frame = CGRect(x: self.W * 0.31, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
-        self.Apple7.frame = CGRect(x: self.W * 0.35, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
-        self.Apple8.frame = CGRect(x: self.W * 0.40, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
-        self.Apple9.frame = CGRect(x: self.W * 0.47, y: self.H * 0.80, width: self.H * 0.09, height: self.H * 0.09)
+        self.Apple1.frame = CGRect(x: self.W * 0.11, y: self.H * 0.80, width: self.W * 0.13, height: self.H * 0.10)
+        self.Apple2.frame = CGRect(x: self.W * 0.17, y: self.H * 0.80, width: self.W * 0.13, height: self.H * 0.10)
+        self.Apple3.frame = CGRect(x: self.W * 0.23, y: self.H * 0.80, width: self.W * 0.13, height: self.H * 0.10)
+        self.Apple4.frame = CGRect(x: self.W * 0.29, y: self.H * 0.80, width: self.W * 0.13, height: self.H * 0.10)
+        self.Apple5.frame = CGRect(x: self.W * 0.35, y: self.H * 0.80, width: self.W * 0.13, height: self.H * 0.10)
+        self.Apple6.frame = CGRect(x: self.W * 0.41, y: self.H * 0.80, width: self.W * 0.13, height: self.H * 0.10)
+        self.Apple7.frame = CGRect(x: self.W * 0.47, y: self.H * 0.80, width: self.W * 0.13, height: self.H * 0.10)
+        self.Apple8.frame = CGRect(x: self.W * 0.50, y: self.H * 0.80, width: self.W * 0.13, height: self.H * 0.10)
+        self.Apple9.frame = CGRect(x: self.W * 0.54, y: self.H * 0.80, width: self.W * 0.13, height: self.H * 0.10)
         
-        self.Correct.frame = CGRect(x: self.W * 0.13, y: self.H * 0.13, width: self.H * 0.40, height: self.H * 0.60)
+        self.Correct.frame = CGRect(x: self.W * 0.15, y: self.H * 0.13, width: self.W * 0.70, height: self.H * 0.60)
         
-        self.PlayAgain.frame = CGRect(x: self.W * 0.41, y: self.H * 0.60, width: self.H * 0.14, height: self.H * 0.14)
+        self.PlayAgain.frame = CGRect(x: self.W * 0.40, y: self.H * 0.63, width: self.W * 0.25, height: self.H * 0.15)
         
-        self.StarAnimation1.frame = CGRect(x: self.W * 0.10, y: self.H * 0.20, width: self.H * 0.18, height: self.H * 0.18)
-        self.StarAnimation2.frame = CGRect(x: self.W * 0.64, y: self.H * 0.47, width: self.H * 0.18, height: self.H * 0.18)
+        self.StarAnimation1.frame = CGRect(x: self.W * 0.10, y: self.H * 0.20, width: self.W * 0.23, height: self.H * 0.18)
+        self.StarAnimation2.frame = CGRect(x: self.W * 0.64, y: self.H * 0.47, width: self.W * 0.23, height: self.H * 0.18)
         
     }
 }
